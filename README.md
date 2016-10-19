@@ -2,9 +2,9 @@
 OM2M plugins for automatic device detection in Bluetooth, BLE and Z-Wave networks.
 
 This project contains 3 plugins for OM2M platform:
-* plugin for detecting Bluetooth devices,
-* plugin for detecting Bluetooth Low Energy (BLE) devices and
-* plugin for detecting Z-Wave nodes + configuration files.
+* plugin for detecting Bluetooth devices (org.eclipse.om2m.binding.bt),
+* plugin for detecting Bluetooth Low Energy (BLE) devices (org.eclipse.om2m.binding.ble) and
+* plugin for detecting Z-Wave nodes (org.eclipse.om2m.binding.zwave) + configuration files (ozw_config).
 
 ## Installation
 These plugins are maven modules which can be included in OM2M version 1.0.0 (clone https://git.eclipse.org/r/om2m/org.eclipse.om2m).
