@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bluetooth
+Bundle-SymbolicName: org.eclipse.om2m.binding.bt
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.om2m.binding.bt.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.apache.commons.logging,
+ org.eclipse.om2m.core.service,
+ org.eclipse.om2m.interworking.service,
+ org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.5.1"
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.om2m.commons;bundle-version="1.0.0"
+Bundle-ClassPath: libs/bluecove-2.1.0.jar,
+ libs/bluecove-gpl-2.1.0.jar,
+ .

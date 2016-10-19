@@ -1,0 +1,276 @@
+
+Logging started 2016-09-05 16:41:13.191 
+
+2016-09-05 16:41:13.194 mgr,     Added driver for controller //./COM7
+2016-09-05 16:41:13.197   Opening controller //./COM7
+2016-09-05 16:41:13.198     Trying to open serial port //./COM7 (Attempt 1)
+2016-09-05 16:41:13.202     Serial port //./COM7 opened (attempt 1)
+2016-09-05 16:41:13.204 contrlr, Queuing (Command) FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2016-09-05 16:41:13.206 contrlr, Queuing (Command) FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2016-09-05 16:41:13.208 contrlr, Queuing (Command) FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2016-09-05 16:41:13.211 contrlr, Queuing (Command) FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2016-09-05 16:41:13.214 contrlr, Queuing (Command) FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2016-09-05 16:41:13.217 Specified option [RetryTimeout] was not found.
+2016-09-05 16:41:13.220 Node002,   Received: 0x01, 0x14, 0x00, 0x49, 0x84, 0x02, 0x0e, 0x04, 0x11, 0x01, 0x5e, 0x26, 0x27, 0x85, 0x59, 0x86, 0x72, 0x5a, 0x73, 0x70, 0x7a, 0x6a
+2016-09-05 16:41:13.222 
+2016-09-05 16:41:13.224 Node002, UPDATE_STATE_NODE_INFO_RECEIVED from node 2
+2016-09-05 16:41:13.226 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x26, 0x03, 0x63, 0xb5
+2016-09-05 16:41:13.228 
+2016-09-05 16:41:13.230 
+2016-09-05 16:41:13.232 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x15) - FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2016-09-05 16:41:13.236 contrlr,   Received: 0x01, 0x10, 0x01, 0x15, 0x5a, 0x2d, 0x57, 0x61, 0x76, 0x65, 0x20, 0x33, 0x2e, 0x39, 0x35, 0x00, 0x01, 0x99
+2016-09-05 16:41:13.240 
+2016-09-05 16:41:13.242 contrlr, Received reply to FUNC_ID_ZW_GET_VERSION:
+2016-09-05 16:41:13.245 contrlr,     Static Controller library, version Z-Wave 3.95
+2016-09-05 16:41:13.247 contrlr,   Expected reply was received
+2016-09-05 16:41:13.251 contrlr,   Message transaction complete
+2016-09-05 16:41:13.254 
+2016-09-05 16:41:13.257 contrlr, Removing current message
+2016-09-05 16:41:13.259 
+2016-09-05 16:41:13.261 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x20) - FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2016-09-05 16:41:13.265 contrlr,   Received: 0x01, 0x08, 0x01, 0x20, 0xc3, 0x19, 0x87, 0x26, 0x01, 0xac
+2016-09-05 16:41:13.267 
+2016-09-05 16:41:13.270 contrlr, Received reply to FUNC_ID_ZW_MEMORY_GET_ID. Home ID = 0xc3198726.  Our node ID = 1
+2016-09-05 16:41:13.272 contrlr,   Expected reply was received
+2016-09-05 16:41:13.275 contrlr,   Message transaction complete
+2016-09-05 16:41:13.278 
+2016-09-05 16:41:13.281 contrlr, Removing current message
+2016-09-05 16:41:13.284 
+2016-09-05 16:41:13.287 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x05) - FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2016-09-05 16:41:13.290 contrlr,   Received: 0x01, 0x04, 0x01, 0x05, 0x1c, 0xe3
+2016-09-05 16:41:13.292 
+2016-09-05 16:41:13.295 contrlr, Received reply to FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES:
+2016-09-05 16:41:13.298 contrlr,     There is a SUC ID Server (SIS) in this network.
+2016-09-05 16:41:13.301 contrlr,     The PC controller is an inclusion static update controller (SUC) and was the original primary before the SIS was added.
+2016-09-05 16:41:13.304 contrlr,   Expected reply was received
+2016-09-05 16:41:13.306 contrlr,   Message transaction complete
+2016-09-05 16:41:13.309 
+2016-09-05 16:41:13.313 contrlr, Removing current message
+2016-09-05 16:41:13.318 
+2016-09-05 16:41:13.321 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x07) - FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2016-09-05 16:41:13.326 contrlr,   Received: 0x01, 0x2b, 0x01, 0x07, 0x01, 0x00, 0x00, 0x86, 0x00, 0x01, 0x00, 0x5a, 0xfe, 0x81, 0xff, 0x88, 0x4f, 0x1f, 0x00, 0x00, 0xfb, 0x9f, 0x7d, 0xa0, 0x67, 0x00, 0x00, 0x80, 0x00, 0x80, 0x86, 0x00, 0x00, 0x00, 0xe8, 0x73, 0x00, 0x00, 0x0e, 0x00, 0x00, 0x60, 0x00, 0x00, 0xfb
+2016-09-05 16:41:13.331 
+2016-09-05 16:41:13.333 contrlr,  Received reply to FUNC_ID_SERIAL_API_GET_CAPABILITIES
+2016-09-05 16:41:13.336 contrlr,     Serial API Version:   1.0
+2016-09-05 16:41:13.339 contrlr,     Manufacturer ID:      0x0086
+2016-09-05 16:41:13.343 contrlr,     Product Type:         0x0001
+2016-09-05 16:41:13.348 contrlr,     Product ID:           0x005a
+2016-09-05 16:41:13.352 contrlr, Queuing (Command) FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2016-09-05 16:41:13.355 contrlr, Queuing (Command) FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2016-09-05 16:41:13.358 contrlr, Queuing (Command) FUNC_ID_SERIAL_API_SET_TIMEOUTS: 0x01, 0x05, 0x00, 0x06, 0x64, 0x0f, 0x97
+2016-09-05 16:41:13.361 contrlr, Queuing (Command) FUNC_ID_SERIAL_API_APPL_NODE_INFORMATION: 0x01, 0x07, 0x00, 0x03, 0x01, 0x02, 0x01, 0x00, 0xf9
+2016-09-05 16:41:13.364 contrlr,   Expected reply was received
+2016-09-05 16:41:13.367 contrlr,   Message transaction complete
+2016-09-05 16:41:13.369 
+2016-09-05 16:41:13.373 contrlr, Removing current message
+2016-09-05 16:41:13.376 
+2016-09-05 16:41:13.378 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x56) - FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2016-09-05 16:41:13.383 contrlr,   Received: 0x01, 0x04, 0x01, 0x56, 0x01, 0xad
+2016-09-05 16:41:13.385 
+2016-09-05 16:41:13.387 contrlr, Received reply to GET_SUC_NODE_ID.  Node ID = 1
+2016-09-05 16:41:13.390 contrlr,   Expected reply was received
+2016-09-05 16:41:13.393 contrlr,   Message transaction complete
+2016-09-05 16:41:13.395 
+2016-09-05 16:41:13.398 contrlr, Removing current message
+2016-09-05 16:41:13.401 
+2016-09-05 16:41:13.404 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x1c) - FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2016-09-05 16:41:13.458 contrlr,   Received: 0x01, 0x25, 0x01, 0x1c, 0x01, 0x20, 0x2c, 0x20, 0x2e, 0x92, 0x10, 0xee, 0xb7, 0x3c, 0x53, 0x99, 0x3f, 0x10, 0xb1, 0x2e, 0xfa, 0x3a, 0xdd, 0x24, 0x04, 0x33, 0x57, 0x70, 0x18, 0xd7, 0x25, 0x1b, 0x9a, 0x2d, 0xb1, 0xd7, 0x97, 0xbb, 0x7c
+2016-09-05 16:41:13.461 
+2016-09-05 16:41:13.465 contrlr, Received reply to FUNC_ID_ZW_GET_RANDOM: true
+2016-09-05 16:41:13.468 contrlr,   Expected reply was received
+2016-09-05 16:41:13.471 contrlr,   Message transaction complete
+2016-09-05 16:41:13.474 
+2016-09-05 16:41:13.476 contrlr, Removing current message
+2016-09-05 16:41:13.479 
+2016-09-05 16:41:13.481 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x02) - FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2016-09-05 16:41:13.545 contrlr,   Received: 0x01, 0x25, 0x01, 0x02, 0x05, 0x08, 0x1d, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0xcf
+2016-09-05 16:41:13.549 
+2016-09-05 16:41:13.551 mgr,     Driver with Home ID of 0xc3198726 is now ready.
+2016-09-05 16:41:13.554 
+2016-09-05 16:41:13.559 contrlr, Received reply to FUNC_ID_SERIAL_API_GET_INIT_DATA:
+2016-09-05 16:41:13.563 contrlr,     Node 001 - Known
+2016-09-05 16:41:13.567 Node001, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Probe1 live=1
+2016-09-05 16:41:13.570 Node001, QueryStage_Probe1
+2016-09-05 16:41:13.572 Node001, QueryStage_Associations
+2016-09-05 16:41:13.574 Node001, QueryStage_Neighbors
+2016-09-05 16:41:13.577 contrlr, Requesting routing info (neighbor list) for Node 1
+2016-09-05 16:41:13.579 Node001, Queuing (Command) Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2016-09-05 16:41:13.582 Node001, Queuing (Query) Query Stage Complete (Neighbors)
+2016-09-05 16:41:13.584 contrlr,     Node 002 - Known
+2016-09-05 16:41:13.586 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Probe1 live=1
+2016-09-05 16:41:13.590 Node002, QueryStage_Probe1
+2016-09-05 16:41:13.594 Node002, NoOperation::Set - Routing=true
+2016-09-05 16:41:13.598 Node002, Queuing (NoOp) NoOperation_Set (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x00, 0x00, 0x25, 0x01, 0xc1
+2016-09-05 16:41:13.600 Node002, Queuing (Query) Query Stage Complete (Probe1)
+2016-09-05 16:41:13.603 contrlr,   Expected reply was received
+2016-09-05 16:41:13.605 contrlr,   Message transaction complete
+2016-09-05 16:41:13.608 
+2016-09-05 16:41:13.610 contrlr, Removing current message
+2016-09-05 16:41:13.638 
+2016-09-05 16:41:13.640 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x06) - FUNC_ID_SERIAL_API_SET_TIMEOUTS: 0x01, 0x05, 0x00, 0x06, 0x64, 0x0f, 0x97
+2016-09-05 16:41:13.645 contrlr,   Received: 0x01, 0x05, 0x01, 0x06, 0x64, 0x0f, 0x96
+2016-09-05 16:41:13.647 
+2016-09-05 16:41:13.649 contrlr, Received reply to FUNC_ID_SERIAL_API_SET_TIMEOUTS
+2016-09-05 16:41:13.652 contrlr,   Expected reply was received
+2016-09-05 16:41:13.654 contrlr,   Message transaction complete
+2016-09-05 16:41:13.657 
+2016-09-05 16:41:13.659 contrlr, Removing current message
+2016-09-05 16:41:13.661 
+2016-09-05 16:41:13.663 contrlr, Sending (Command) message (Callback ID=0x00, Expected Reply=0x00) - FUNC_ID_SERIAL_API_APPL_NODE_INFORMATION: 0x01, 0x07, 0x00, 0x03, 0x01, 0x02, 0x01, 0x00, 0xf9
+2016-09-05 16:41:13.666 contrlr, Removing current message
+2016-09-05 16:41:13.668 
+2016-09-05 16:41:13.670 Node001, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2016-09-05 16:41:13.675 Node001,   Received: 0x01, 0x20, 0x01, 0x80, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5c
+2016-09-05 16:41:13.677 
+2016-09-05 16:41:13.679 Node001, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2016-09-05 16:41:13.682 Node001,     Neighbors of this node are:
+2016-09-05 16:41:13.685 Node001,     Node 2
+2016-09-05 16:41:13.687 Node001,   Expected reply was received
+2016-09-05 16:41:13.689 Node001,   Message transaction complete
+2016-09-05 16:41:13.692 
+2016-09-05 16:41:13.694 Node001, Removing current message
+2016-09-05 16:41:13.697 
+2016-09-05 16:41:13.700 Node002, Sending (NoOp) message (Callback ID=0x01, Expected Reply=0x13) - NoOperation_Set (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x00, 0x00, 0x25, 0x01, 0xc1
+2016-09-05 16:41:13.708 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:13.711 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:13.722 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x01, 0x00, 0x00, 0x02, 0xe8
+2016-09-05 16:41:13.725 Node002,   ZW_SEND_DATA Request with callback ID 0x01 received (expected 0x01)
+2016-09-05 16:41:13.727 Node002, Request RTT 24 Average Request RTT 24
+2016-09-05 16:41:13.731 Node002,   Expected reply was received
+2016-09-05 16:41:13.736 Node002,   Message transaction complete
+2016-09-05 16:41:13.739 
+2016-09-05 16:41:13.742 Node002, Removing current message
+2016-09-05 16:41:13.745 Node001, Query Stage Complete (Neighbors)
+2016-09-05 16:41:13.748 Node001, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Session live=1
+2016-09-05 16:41:13.751 Node001, QueryStage_Session
+2016-09-05 16:41:13.755 Node001, QueryStage_Dynamic
+2016-09-05 16:41:13.757 Node001, QueryStage_Configuration
+2016-09-05 16:41:13.759 Node001, QueryStage_Complete
+2016-09-05 16:41:13.762 CheckCompletedNodeQueries m_allNodesQueried=0 m_awakeNodesQueried=0
+2016-09-05 16:41:13.764 CheckCompletedNodeQueries all=0, deadFound=0 sleepingOnly=0
+2016-09-05 16:41:13.767 Node002, Query Stage Complete (Probe1)
+2016-09-05 16:41:13.769 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Associations live=1
+2016-09-05 16:41:13.773 Node002, QueryStage_Associations
+2016-09-05 16:41:13.776 Node002, Number of association groups reported for node 2 is 1.
+2016-09-05 16:41:13.779 Node002, Get Associations for group 1 of node 2
+2016-09-05 16:41:13.781 Node002, Queuing (Send) Get Associations (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x01, 0x25, 0x02, 0x46
+2016-09-05 16:41:13.784 Node002, Queuing (Query) Query Stage Complete (Associations)
+2016-09-05 16:41:13.786 
+2016-09-05 16:41:13.789 Node002, Sending (Send) message (Callback ID=0x02, Expected Reply=0x04) - Get Associations (Node=2): 0x01, 0x0a, 0x00, 0x13, 0x02, 0x03, 0x85, 0x02, 0x01, 0x25, 0x02, 0x46
+2016-09-05 16:41:13.797 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:13.800 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:13.812 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x02, 0x00, 0x00, 0x02, 0xeb
+2016-09-05 16:41:13.815 Node002,   ZW_SEND_DATA Request with callback ID 0x02 received (expected 0x02)
+2016-09-05 16:41:13.818 Node002, Request RTT 26 Average Request RTT 25
+2016-09-05 16:41:13.822 Node002,   Received: 0x01, 0x0c, 0x00, 0x04, 0x00, 0x02, 0x06, 0x85, 0x03, 0x01, 0x05, 0x00, 0x01, 0x70
+2016-09-05 16:41:13.826 
+2016-09-05 16:41:13.829 Node002, Response RTT 36 Average Response RTT 36
+2016-09-05 16:41:13.832 Node002, Received Association report from node 2, group 1, containing 1 associations
+2016-09-05 16:41:13.834 Node002,   The group contains:
+2016-09-05 16:41:13.837 Node002,     Node 1
+2016-09-05 16:41:13.840 Node002, Querying associations for node 2 is complete.
+2016-09-05 16:41:13.845 Node002,   Expected reply and command class was received
+2016-09-05 16:41:13.848 Node002,   Message transaction complete
+2016-09-05 16:41:13.850 
+2016-09-05 16:41:13.853 Node002, Removing current message
+2016-09-05 16:41:13.856 Node002, Query Stage Complete (Associations)
+2016-09-05 16:41:13.859 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Neighbors live=1
+2016-09-05 16:41:13.861 Node002, QueryStage_Neighbors
+2016-09-05 16:41:13.864 Requesting routing info (neighbor list) for Node 2
+2016-09-05 16:41:13.866 Node002, Queuing (Command) Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2016-09-05 16:41:13.868 Node002, Queuing (Query) Query Stage Complete (Neighbors)
+2016-09-05 16:41:13.870 
+2016-09-05 16:41:13.873 Node002, Sending (Command) message (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2016-09-05 16:41:13.878 Node002,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x5f
+2016-09-05 16:41:13.881 
+2016-09-05 16:41:13.884 Node002, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2016-09-05 16:41:13.886 Node002,     Neighbors of this node are:
+2016-09-05 16:41:13.889 Node002,     Node 1
+2016-09-05 16:41:13.892 Node002,   Expected reply was received
+2016-09-05 16:41:13.894 Node002,   Message transaction complete
+2016-09-05 16:41:13.897 
+2016-09-05 16:41:13.900 Node002, Removing current message
+2016-09-05 16:41:13.902 Node002, Query Stage Complete (Neighbors)
+2016-09-05 16:41:13.904 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Session live=1
+2016-09-05 16:41:13.907 Node002, QueryStage_Session
+2016-09-05 16:41:13.909 Node002, Queuing (Query) SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x25, 0x03, 0xe6
+2016-09-05 16:41:13.912 Node002, Queuing (Query) Powerlevel_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x73, 0x02, 0x25, 0x04, 0xb5
+2016-09-05 16:41:13.915 Node002, Queuing (Query) Query Stage Complete (Session)
+2016-09-05 16:41:13.918 
+2016-09-05 16:41:13.921 Node002, Sending (Query) message (Callback ID=0x03, Expected Reply=0x04) - SwitchAllCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x27, 0x02, 0x25, 0x03, 0xe6
+2016-09-05 16:41:13.929 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:13.932 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:13.943 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x03, 0x00, 0x00, 0x01, 0xe9
+2016-09-05 16:41:13.948 Node002,   ZW_SEND_DATA Request with callback ID 0x03 received (expected 0x03)
+2016-09-05 16:41:13.951 Node002, Request RTT 27 Average Request RTT 26
+2016-09-05 16:41:13.954 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x27, 0x03, 0xff, 0x28
+2016-09-05 16:41:13.957 
+2016-09-05 16:41:13.960 Node002, Response RTT 36 Average Response RTT 36
+2016-09-05 16:41:13.963 Node002, Initial read of value
+2016-09-05 16:41:13.965 Node002, Received SwitchAll report from node 2: On and Off Enabled
+2016-09-05 16:41:13.968 Node002,   Expected reply and command class was received
+2016-09-05 16:41:13.971 Node002,   Message transaction complete
+2016-09-05 16:41:13.973 
+2016-09-05 16:41:13.976 Node002, Removing current message
+2016-09-05 16:41:13.979 
+2016-09-05 16:41:13.982 Node002, Sending (Query) message (Callback ID=0x04, Expected Reply=0x04) - Powerlevel_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x73, 0x02, 0x25, 0x04, 0xb5
+2016-09-05 16:41:13.990 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:13.993 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:14.005 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x04, 0x00, 0x00, 0x01, 0xee
+2016-09-05 16:41:14.008 Node002,   ZW_SEND_DATA Request with callback ID 0x04 received (expected 0x04)
+2016-09-05 16:41:14.012 Node002, Request RTT 26 Average Request RTT 26
+2016-09-05 16:41:14.015 Node002,   Received: 0x01, 0x0a, 0x00, 0x04, 0x00, 0x02, 0x04, 0x73, 0x03, 0x00, 0x00, 0x87
+2016-09-05 16:41:14.018 
+2016-09-05 16:41:14.022 Node002, Response RTT 36 Average Response RTT 36
+2016-09-05 16:41:14.024 Node002, Received a PowerLevel report: PowerLevel=Normal, Timeout=0
+2016-09-05 16:41:14.026 Node002, Initial read of value
+2016-09-05 16:41:14.028 Node002, Initial read of value
+2016-09-05 16:41:14.032 Node002,   Expected reply and command class was received
+2016-09-05 16:41:14.034 Node002,   Message transaction complete
+2016-09-05 16:41:14.037 
+2016-09-05 16:41:14.040 Node002, Removing current message
+2016-09-05 16:41:14.044 Node002, Query Stage Complete (Session)
+2016-09-05 16:41:14.048 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Dynamic live=1
+2016-09-05 16:41:14.052 Node002, QueryStage_Dynamic
+2016-09-05 16:41:14.054 Node002, Queuing (Send) BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x25, 0x05, 0xe7
+2016-09-05 16:41:14.056 Node002, Queuing (Send) SwitchMultilevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x26, 0x02, 0x25, 0x06, 0xe2
+2016-09-05 16:41:14.058 Node002, Queuing (Query) Query Stage Complete (Dynamic)
+2016-09-05 16:41:14.062 
+2016-09-05 16:41:14.064 Node002, Sending (Send) message (Callback ID=0x05, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x25, 0x05, 0xe7
+2016-09-05 16:41:14.072 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:14.075 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:14.087 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x05, 0x00, 0x00, 0x02, 0xec
+2016-09-05 16:41:14.089 Node002,   ZW_SEND_DATA Request with callback ID 0x05 received (expected 0x05)
+2016-09-05 16:41:14.092 Node002, Request RTT 24 Average Request RTT 25
+2016-09-05 16:41:14.096 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x20, 0x03, 0x63, 0xb3
+2016-09-05 16:41:14.100 
+2016-09-05 16:41:14.103 Node002, Response RTT 35 Average Response RTT 35
+2016-09-05 16:41:14.106 Node002, Received Basic report from node 2: level=99
+2016-09-05 16:41:14.109 Node002,   Expected reply and command class was received
+2016-09-05 16:41:14.111 Node002,   Message transaction complete
+2016-09-05 16:41:14.114 
+2016-09-05 16:41:14.116 Node002, Removing current message
+2016-09-05 16:41:14.118 
+2016-09-05 16:41:14.120 Node002, Sending (Send) message (Callback ID=0x06, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x26, 0x02, 0x25, 0x06, 0xe2
+2016-09-05 16:41:14.128 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2016-09-05 16:41:14.131 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2016-09-05 16:41:14.142 Node002,   Received: 0x01, 0x07, 0x00, 0x13, 0x06, 0x00, 0x00, 0x02, 0xef
+2016-09-05 16:41:14.146 Node002,   ZW_SEND_DATA Request with callback ID 0x06 received (expected 0x06)
+2016-09-05 16:41:14.149 Node002, Request RTT 26 Average Request RTT 25
+2016-09-05 16:41:14.152 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x26, 0x03, 0x63, 0xb5
+2016-09-05 16:41:14.155 
+2016-09-05 16:41:14.158 Node002, Response RTT 35 Average Response RTT 35
+2016-09-05 16:41:14.160 Node002, Received SwitchMultiLevel report: level=99
+2016-09-05 16:41:14.163 Node002, Initial read of value
+2016-09-05 16:41:14.166 Node002,   Expected reply and command class was received
+2016-09-05 16:41:14.168 Node002,   Message transaction complete
+2016-09-05 16:41:14.171 
+2016-09-05 16:41:14.174 Node002, Removing current message
+2016-09-05 16:41:14.177 Node002, Query Stage Complete (Dynamic)
+2016-09-05 16:41:14.179 Node002, AdvanceQueries queryPending=0 queryRetries=0 queryStage=Configuration live=1
+2016-09-05 16:41:14.182 Node002, QueryStage_Configuration
+2016-09-05 16:41:14.184 Node002, QueryStage_Complete
+2016-09-05 16:41:14.187 CheckCompletedNodeQueries m_allNodesQueried=0 m_awakeNodesQueried=0
+2016-09-05 16:41:14.189 CheckCompletedNodeQueries all=1, deadFound=0 sleepingOnly=1
+2016-09-05 16:41:14.192          Node query processing complete.
+2016-09-05 16:41:14.203 mgr,     Manager::WriteConfig completed for driver with home ID of 0xc3198726
